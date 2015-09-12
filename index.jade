@@ -1,0 +1,131 @@
+//output: index.html
+doctype html
+html
+    head
+        title Intro to Skeleton
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        
+        // Custom CSS 
+        link(rel="stylesheet", href="includes/css/style.css")
+        
+        // Skeleton
+        link(rel="stylesheet", href="includes/css/skeleton/skeleton.css")
+    
+    body
+        
+        header#global-header
+          .header-title
+            h1 Hello World!
+          nav.global-navbar
+            ul
+              li
+                a(href="#") About
+              li
+                a(href="#") Portfolio
+              li
+                a(href="#") Projects
+              li
+                a(href="#") Blog
+              li
+                a(href="#") Contact
+        
+        div#main-container
+          .container
+            h1.skeleton-intro This page uses Skeleton :)
+            
+            .row.paragraphs-demo
+              .six.columns
+                h4 Title 1
+                p Whatever pickled keffiyeh flannel <span>bespoke meh</span>, fap salvia tote bag. Squid iPhone farm-to-table, sustainable before they sold out organic gastropub master cleanse brunch Shoreditch twee Blue Bottle. Etsy Marfa post-ironic try-hard ethical shabby chic, umami Blue Bottle migas. Salvia asymmetrical wolf heirloom ennui. 3 wolf moon sartorial street art Austin, dreamcatcher artisan gentrify tote bag lumbersexual.
+              
+              .six.columns
+                h4 Title 2
+                p Synth distillery biodiesel pickled. Try-hard forage banh mi aesthetic brunch vinyl ugh, <span>tattooed stumptown</span> salvia polaroid Helvetica. Tilde raw denim banh mi, four dollar toast kitsch butcher roof party. Direct trade cornhole Austin skateboard American Apparel, fap gluten-free roof party whatever. Salvia brunch PBR&B, aesthetic street art tote bag stumptown readymade before they sold out tousled.
+            
+            .row.images-label
+              .twelve.columns
+                h4 Images
+            .row.images-demo
+              .four.columns
+                img(src="includes/images/img1.jpg", alt="img1")
+              .four.columns
+                img(src="includes/images/img2.jpg", alt="img2")
+              .four.columns
+                img(src="includes/images/img3.jpg", alt="img3")
+            
+            .row.lists-container
+              .six.columns
+                h4 Ordered List
+                ol
+                  li Item 1
+                  li Item 2
+                  li Item 3
+                  li Item 4
+              .six.columns
+                h4 Unordered List
+                ul
+                  li Unordered 1
+                  li Unordered 2
+                  li Unordered 3
+                  li Unordered 4
+                  
+            .form-container
+              .row.form
+                .six.columns
+                  label(for="emailAddress") Your email
+                  input(type="email", placeholder="example@mail.com", class="u-full-width", id="emailAddress")
+                .six.columns
+                  label(for="reasonForContacting") Reason for contacting
+                  select(id="reasonForContacting", class="u-full-width")
+                    option(value="opt1") Questions
+                    option(value="opt2") Ask for images downloading
+                    option(value="opt3") Personal Message
+              label(for="message") Message
+              textarea(name="message", cols="30", rows="10", class="u-full-width")
+              input(type="submit", value="SUBMIT", class="button-primary")
+          
+            .table-container
+              table
+                thead
+                  td Name
+                  td Age
+                  td Skills/Jobs
+                  td Color
+                tbody
+                  tr
+                    td Ed Sheeran
+                    td 24
+                    td Singer-Songwriter
+                    td Green
+                  tr
+                    td Taylor Swift
+                    td 26
+                    td Singer-Songwriter
+                    td Red
+                  tr
+                    td Chi To
+                    td 17
+                    td Coder
+                    td Midnight Blue
+        
+        footer
+          .row.info-container
+            .six.columns.social-media
+              h4 FIND ME ON
+              ul
+                li Facebook
+                li Twitter
+                li Google+
+                li Github
+            .six.columns.email-me
+              label You can also subscribe to my emailing list!
+              input(type="email", placeholder="example@email.com", class="u-full-width")
+              button(class="button-primary") SUBSCRIBE
+            
+            
+        // jQuery Google CDN
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+        
+        // Custom JavaScript
+        script(src="includes/js/script.js")
